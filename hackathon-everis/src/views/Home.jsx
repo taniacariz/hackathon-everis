@@ -7,7 +7,6 @@ export const Home = () => {
     return (
         <div>
             asdasdad
-            <Footer/>
             <MainMenu/>
             <NavTop/>
         </div>
