@@ -1,0 +1,142 @@
+
+
+        {
+          "Work": [
+              {
+                  "id": "1",
+                  "area": "G_1",
+                  "space": 12,
+                  "type": "Informatica"
+              },
+              {
+                  "id": "2",
+                  "area": "G_2",
+                  "space": 12,
+                  "type": "Informatica"  
+              },
+              {
+                  "id": "3",
+                  "area": "G_3",
+                  "space": 11,
+                  "type": "Consultoria"
+              },
+              {
+                  "id": "4",
+                  "area": "G_4",
+                  "space": 14,
+                  "type": "Consultoria"
+              },
+              {   "id": "5",
+                  "area": "G_5",
+                  "space": 12,
+                  "type": "Consultoria"
+              },
+              {
+                  "id": "6",
+                  "area": "G_6",
+                  "space": 11,
+                  "type": "Consultoria"
+              },
+              {
+                  "id": "7",
+                  "area": "G_7",
+                  "space": 11,
+                  "type": "RRHH"
+              },
+              {
+                  "id": "8",
+                  "area": "G_8",
+                  "space": 15,
+                  "type": "BSA"
+            },
+            {
+                  "id": "9",
+                  "area": "G_9",
+                  "space": 10,
+                  "type": "BSA"
+            },
+            {
+                  "id": "10",
+                  "area": "G_10",
+                  "space": 10,
+                  "type": "Sala capacitacion"
+            },              {
+                  "id": "11",
+                  "area": "G_11",
+                  "space": 13,
+                  "type": "Auditorio"
+            },
+            {
+                  "id": "12",
+                  "area": "G_12",
+                  "space": 20,
+                  "type": "Cafeteria"
+            },
+            {
+                  "id": "13",
+                  "area": "Sala_A",
+                  "name": "Pan de Azúcar",
+                  "space": 4,
+                  "type": "Reuniones"
+            },
+            {
+                  "id": "14",
+                  "area": "Sala_B",
+                  "space": 4,
+                  "name": "Ciudad Amurallada",
+                  "type": "Reuniones"
+            },              
+            {
+                 "id": "15",
+                  "area": "Sala_C",
+                  "space": 7,
+                  "name": "Machu Picchu",
+                  "type": "Reuniones"
+            },
+            {
+                  "id": "16",
+                  "area": "Sala_D",
+                  "space": 3,
+                  "name": "Estatua de la Libertad",
+                  "type": "Reuniones"
+            },
+            {
+                  "id": "17",
+                  "area": "Sala_E",
+                  "space": 3,
+                  "name": "Tokio",
+                  "type": "Reuniones"
+            },
+            {
+                  "id": "18",
+                  "area": "Sala_F",
+                  "space": 1,
+                  "name": "Gran Cañón",
+                  "type": "Reuniones"
+            },
+            {
+                  "id": "19",
+                  "area": "Sala_G",
+                  "space": 3,
+                  "name": "Rapa Nui",
+                  "type": "Reuniones"
+            },
+            {
+                  "id": "20",
+                  "area": "Sala_H",
+                  "space": 2,
+                  "name": "Big Ben",
+                  "type": "Reuniones"
+            },
+            {
+                  "id": "21",
+                  "area": "Sala_I",
+                  "space": 2,
+                  "name": "Chileorienta",
+                  "type": "Privado"
+           }
+          ]
+        }
+
+
+            
