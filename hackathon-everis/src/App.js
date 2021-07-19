@@ -4,7 +4,7 @@ import './App.css';
 import { Login } from "./views/Login";
 import { Register } from "./views/Register";
 import { Home } from "./views/Home";
-
+ 
 function App() {
   return (
     <Router>
