@@ -8,8 +8,8 @@ export const HeaderLogin = () => {
         <div>
              <div className="container-header">
                 <div className="container-btn">
-                <button className="btn-header text">Iniciar Sesión |</button>
-                <button className="btn-header text">Registrarse</button>
+                <button className="header-btn header-text">Iniciar Sesión |</button>
+                <button className="header-btn header-text">Registrarse</button>
                 </div>
                 <div className="container-btn">
                 <div className="header-text">Space Management Model</div>

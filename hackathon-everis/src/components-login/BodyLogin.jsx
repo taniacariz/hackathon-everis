@@ -1,3 +1,4 @@
+import "./login.css"
 import React from 'react'
 
 export const BodyLogin = () => {
@@ -7,12 +8,21 @@ export const BodyLogin = () => {
             <div className="container-form">
                 <form>
                 <h2 className="text-form">Iniciar sesión</h2>
-                <label>
-                    <input className="form-placeholder" type="text" name="name" placeholder="Ingresa tu correo Everis"/>
-                    <input className="form-placeholder" type="text" name="password" placeholder="Ingresa tu contraseña"/>
-                </label>
+                    <input 
+                    type="text"
+                    className="form-placeholder"  
+                    name="name" 
+                    placeholder="Ingresa tu correo Everis"
+                    />
+                    <input 
+                    type="text" 
+                    className="form-placeholder" 
+                    name="password" 
+                    placeholder="Ingresa tu contraseña"/>
+
                 <div className="text-form">¿Olvidaste tu contraseña?</div>
-                    <input className="btn-submit" type="submit" value="INGRESAR" />
+
+                <input className="btn-submit" type="submit" value="INGRESAR" />
                 </form>
             </div>
         </div>

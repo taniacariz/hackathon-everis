@@ -60,12 +60,12 @@
   }
   
   .submit-btn{
-  width: 130px;
-  height: 40px;
-  color: #ffffff;
-  background: #6785C1;
-  border-radius: 10px;
-  border:none;
+    width: 130px;
+    height: 40px;
+    color: #ffffff;
+    background: #6785C1;
+    border-radius: 10px;
+    border:none;
   }
   
   .container-img{ 
