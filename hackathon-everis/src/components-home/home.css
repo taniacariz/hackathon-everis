@@ -1,3 +1,47 @@
+.view-home-container{
+  display: flex;
+  flex-flow: row nowrap;
+}
+  .navbar-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 24%;
+    height:100vh; 
+    
+  }
+    .everis-logo{
+      width: 63%;
+      margin: 10% 0% 20% 0% ;
+    }
+    .btn-group{
+      display: flex;
+      flex-flow: column nowrap ;
+      margin-top: 10%;
+      width: 60%;
+    }
+     .navbar-bttn{
+      border: 3px solid black; 
+      border-image: linear-gradient(100deg, #BCE687 , #6785C1) 1;
+      margin: 10%;
+      height: 6vh;
+      text-align: center;
+      text-decoration: none;
+    
+     }
+     
+
+
+
+
+
+
+
+
+
+
+
+
 .container-nav-top{
   background-color: black;
   display: flex;

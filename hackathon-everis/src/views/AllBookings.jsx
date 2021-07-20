@@ -4,7 +4,7 @@ import React from 'react'
 const AllBookings = () => {
     return (
         <div>
-            HOLO
+            Allbookings
         </div>
     )
 }

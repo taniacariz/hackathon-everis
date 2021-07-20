@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <div className="btn-group"> 
-            <Link to = '/bookings' type ='button'>Reservar</Link>
-            <Link to = '/allBookings' type ='button'>Todas las reservas</Link>
-            <Link to = '/myBookings' type ='button'>Mis reservas</Link>
+            <Link to = '/home/bookings' type ='button' className="navbar-bttn">Reservar</Link>
+            <Link to = '/home/allBookings' type ='button' className="navbar-bttn" >Todas las reservas</Link>
+            <Link to = '/home/myBookings' type ='button' className="navbar-bttn">Mis reservas</Link>
         </div>
     )
 }

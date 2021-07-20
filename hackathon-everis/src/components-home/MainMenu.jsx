@@ -1,33 +1,15 @@
 import React from "react";
+import '../components-home/home.css'
 import logo_everis from "../images/logo_everis.png";
-import Bookings from "../views/Bookings";
-import AllBookings from "../views/AllBookings";
-import MyBookings from "../views/MyBookings";
 import Navbar from "./Navbar";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const MainMenu = () => {
   return (
-    <div>
-      <img src={logo_everis} alt="Everis Logo" width="190px" height="94px" />
-
-      <Router>
-        <div className="container">
-          <Navbar />
-          <Switch>
-            <Route path="/bookings" exact>
-              <Bookings />
-            </Route>
-            <Route path="/allBookings" exact>
-              <AllBookings />
-            </Route>
-            <Route path="/myBookings" exact>
-              <MyBookings /> 
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+    <div className="navbar-container">
+      <img src={logo_everis} alt="Everis Logo" className="everis-logo" />
+      <span>Nombre dinamico</span>
+      <Navbar />
     </div>
   );
 };
