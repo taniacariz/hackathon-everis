@@ -2,16 +2,16 @@ import React from 'react'
 import GoForwardArrow from '../components-home/GoFowardArrow'
 import ReturnArrow from '../components-home/Return-arrow'
 
-
-const Quantity = () => {
+const WorkSpace = () => {
   return (
     <div>
-      Estas en quantity
+      Estas en zona laboral
       <GoForwardArrow />
       <ReturnArrow />
+
     </div>
   )
 }
 
-export default Quantity
+export default WorkSpace
  
