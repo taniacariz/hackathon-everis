@@ -10,7 +10,7 @@ function App() {
         <Switch> 
           <Route path="/" exact>
               <Login />
-            </Route>
+          </Route>
           <Route path="/register">
               <Register />
             </Route>
