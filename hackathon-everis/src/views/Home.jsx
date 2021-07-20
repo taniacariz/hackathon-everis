@@ -7,7 +7,7 @@ import Bookings from "./Bookings"
 import AllBookings from "./AllBookings"
 import MyBookings from "./MyBookings";
 
-export const Home = () => {
+export const Home = () => { 
   return (
     <Router>
       <div className="view-home-container">

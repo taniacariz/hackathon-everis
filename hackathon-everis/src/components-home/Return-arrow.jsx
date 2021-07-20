@@ -12,6 +12,6 @@ const ReturnArrow = (props) => {
       </div>
     </div>
   )
-}
+} 
 
 export default ReturnArrow

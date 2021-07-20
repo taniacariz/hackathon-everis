@@ -9,7 +9,7 @@ const NavTop = () => {
   const changeView = (e) => {
     console.log("diste click en " + e.currentTarget.id);
   };
-
+ 
   return (
     <nav className="container-nav-top">
       <div className="each-bttn-nav-top" id="date" onClick={changeView}>

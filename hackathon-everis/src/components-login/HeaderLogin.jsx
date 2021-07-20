@@ -16,6 +16,6 @@ export const HeaderLogin = () => {
                 <img src={logo_everis} alt="Everis Logo" width="190px" height="94px"/> 
                 </div>
             </div>
-        </div>
+        </div> 
     )
 }

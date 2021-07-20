@@ -8,4 +8,4 @@ export const FooterLogin = () => {
         Desarrollado por “The Reactive Girls” - Laboratoria SCL016
     </footer>
     )
-}
+} 

@@ -9,7 +9,7 @@ export const FormLogin = (props) => {
     const [error, setError] = useState (null)
     const [register, setRegister] = useState(true)
 
-
+ 
     const procesarDatos = e => {
         e.preventDefault()
         if (!email.trim()){

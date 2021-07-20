@@ -12,7 +12,7 @@ const MainMenu = () => {
       <span>Nombre dinamico</span>
       <Navbar />
     </div>
-  );
+  ); 
 };
 
 export default MainMenu;

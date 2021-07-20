@@ -16,7 +16,7 @@ const Bookings = () => {
 //         }
 //     }
 
-    return (
+    return ( 
         <div className="booking-container">
             <NavTop />
             
