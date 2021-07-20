@@ -9,8 +9,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #E5E5E5;
 }
+@font-face {
+  font-family: avenir-roman;
+  src: url('./fonts/AvenirLTStd-Roman.otf');
+}
+@font-face {
+  font-family: avenir-black;
+  src: url('./fonts/AvenirLTStd-Black.otf');
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  box-sizing: border-box;
+  font-family: avenir-roman;
+  margin: 0;
 }

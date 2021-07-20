@@ -1,4 +1,7 @@
-import logo_everis from '../images/logo_everis.png' 
+import React from "react";
+import '../components-home/home.css'
+import logo_everis from "../images/logo_everis.png";
+
 
 const MainMenu = () => {
   return ( 
@@ -6,6 +9,6 @@ const MainMenu = () => {
      <img alt="">{logo_everis}</img>       
     </div>
   );
-}
+};
 
 export default MainMenu;
