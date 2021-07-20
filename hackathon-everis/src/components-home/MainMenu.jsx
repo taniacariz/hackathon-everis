@@ -3,7 +3,7 @@ import logo_everis from '../images/logo_everis.png'
 const MainMenu = () => {
   return ( 
     <div>
-     <img>{logo_everis}</img>       
+      <img src={logo_everis} alt="logo"/>      
     </div>
   );
 }

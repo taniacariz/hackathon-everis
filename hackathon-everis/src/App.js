@@ -1,6 +1,4 @@
-import {
-  BrowserRouter as Router, Switch, Route, } from "react-router-dom";
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import { Login } from "./views/Login";
 import { Register } from "./views/Register";
 import { Home } from "./views/Home";

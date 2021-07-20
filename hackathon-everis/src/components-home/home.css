@@ -1,0 +1,12 @@
+.container-nav-top{
+  background-color: black;
+}
+  .each-bttn-nav-top{
+    margin: 0;
+  }
+  .nav-subtitle{
+    color: white;
+  }
+  .nav-icon{
+    width: 2%;
+  }

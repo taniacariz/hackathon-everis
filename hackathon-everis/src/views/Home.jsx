@@ -1,7 +1,6 @@
 import React from 'react'
-import Footer from '../componentes/Footer'
-import MainMenu from '../componentes/MainMenu';
-import NavTop from '../componentes/NavTop'
+import MainMenu from '../components-home/MainMenu';
+import NavTop from '../components-home/NavTop'
 
 export const Home = () => {
     return (
