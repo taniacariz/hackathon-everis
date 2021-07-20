@@ -9,6 +9,6 @@ export const Login = () => {
             <HeaderLogin />
             <BodyLogin />
             <FooterLogin />
-        </div>
+        </div> 
     )
 }

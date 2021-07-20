@@ -15,5 +15,5 @@ const GoForwardArrow = () => {
     </div>
   )
 }
-
-export default GoForwardArrow;
+ 
+export default GoForwardArrow

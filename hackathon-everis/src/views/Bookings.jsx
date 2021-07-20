@@ -11,7 +11,15 @@ const Bookings = () => {
         
 
 
-);
+
+    return ( 
+        <div className="booking-container">
+            <NavTop />
+            
+            <GoForwardArrow />
+
+        </div>
+    )
 }
 
 export default Bookings;

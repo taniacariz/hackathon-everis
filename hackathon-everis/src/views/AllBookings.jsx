@@ -5,7 +5,7 @@ const AllBookings = () => {
     return (
         <div>
             Allbookings
-        </div>
+        </div> 
     )
 }
 

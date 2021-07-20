@@ -15,7 +15,7 @@ const MainMenu = () => {
       <Navbar />
       <SignOff />
     </div>
-  );
+  ); 
 };
 
 export default MainMenu;
