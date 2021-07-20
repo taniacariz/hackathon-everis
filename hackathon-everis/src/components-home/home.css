@@ -1,12 +1,20 @@
 .container-nav-top{
   background-color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 4% 8% 1% 8%;
 }
   .each-bttn-nav-top{
-    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
   .nav-subtitle{
     color: white;
+    margin: 0% 8% 0% 8%;
   }
   .nav-icon{
-    width: 2%;
+    width: 20%;
   }
