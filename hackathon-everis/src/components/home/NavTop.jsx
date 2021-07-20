@@ -1,15 +1,15 @@
 import "./home.css";
-import date from "../images/date.png";
-import hour from "../images/hour.png";
-import quantity from "../images/quantity.png";
-import workSpace from "../images/work-space.png";
-import confirm from "../images/confirm.png";
+import date from "../../images/date.png";
+import hour from "../../images/hour.png";
+import quantity from "../../images/quantity.png";
+import workSpace from "../../images/work-space.png";
+import confirm from "../../images/confirm.png";
 
 const NavTop = () => {
   const changeView = (e) => {
     console.log("diste click en " + e.currentTarget.id);
   };
- 
+
   return (
     <nav className="container-nav-top">
       <div className="each-bttn-nav-top" id="date" onClick={changeView}>

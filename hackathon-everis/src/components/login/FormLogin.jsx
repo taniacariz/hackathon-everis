@@ -1,5 +1,6 @@
+import "./login.css";
 import React from "react";
-import { auth } from "../Firebase";
+import { auth } from "../../Firebase";
 
 export const FormLogin = () => {
   const [email, setEmail] = React.useState("");

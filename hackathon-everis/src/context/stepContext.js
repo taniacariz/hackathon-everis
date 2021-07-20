@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const stepContext = React.createContext({
-  step: 'null',
-  updateStep: () =>{}
+  step: "null",
+  updateStep: () => {},
 });
 
-export default stepContext
+export default stepContext;
