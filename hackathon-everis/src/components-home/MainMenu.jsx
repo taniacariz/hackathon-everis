@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import logo_everis from "../images/logo_everis.png";
 import Bookings from "../views/Bookings";
 import AllBookings from "../views/AllBookings";
@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const MainMenu = () => {
   return (
-    <div>
+    <Fragment>
       <img src={logo_everis} alt="Everis Logo" width="190px" height="94px" />
 
       <Router>
@@ -28,7 +28,7 @@ const MainMenu = () => {
           </Switch>
         </div>
       </Router>
-    </div>
+    </Fragment>
   );
 };
 
