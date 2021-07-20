@@ -18,6 +18,8 @@ const Bookings = () => {
             <NavTop />
             <h1>estamos en bookings</h1>
 
+
+    return ( 
         <div className="booking-container">
             <NavTop />
             

@@ -8,7 +8,7 @@ export const BodyLogin = () => {
             <div className="container-form">
                 <form>
                 <h2 className="text-form">Iniciar sesión</h2>
-                    <input 
+                    <input  
                     type="text"
                     className="form-placeholder"  
                     name="name" 

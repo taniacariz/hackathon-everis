@@ -9,6 +9,6 @@ const Navbar = () => {
             <Link to = '/home/myBookings' type ='button' className="navbar-bttn">Mis reservas</Link>
         </div>
     )
-}
+} 
 
 export default Navbar;
