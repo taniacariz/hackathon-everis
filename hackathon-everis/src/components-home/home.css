@@ -36,57 +36,53 @@
   margin-top: 100px;
   width: 115px;
 }
-  .navbar-container{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 24%;
-    height:100vh; 
-    
-  }
-    .everis-logo{
-      width: 63%;
-      margin: 10% 0% 20% 0% ;
-    }
-    .btn-group{
-      display: flex;
-      flex-flow: column nowrap ;
-      margin-top: 10%;
-      width: 60%;
-    }
-     .navbar-bttn{
-      border: 3px solid black; 
-      border-image: linear-gradient(100deg, #BCE687 , #6785C1) 1;
-      margin: 10%;
-      height: 6vh;
-      text-align: center;
-      text-decoration: none;
-    
-     }
-
-  .booking-container{
-    width: 76%;
-    background-color: #6785C1;
-    color: white;
-  }
-     
+.navbar-container{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 24%;
+  height:100vh;    
+}
+.everis-logo{
+  width: 63%;
+  margin: 10% 0% 20% 0% ;
+}
+.btn-group{
+  display: flex;
+  flex-flow: column nowrap ;
+  margin-top: 10%;
+  width: 60%;
+}
+.navbar-bttn{
+  border: 3px solid black; 
+  border-image: linear-gradient(100deg, #BCE687 , #6785C1) 1;
+  margin: 10%;
+  height: 6vh;
+  text-align: center;
+  text-decoration: none;
+}
+.booking-container{
+  width: 76%;
+  background-color: #6785C1;
+  color: white;
+}
 .container-nav-top{
   display: flex;
   flex-flow: row nowrap;
   margin: 4% 8% 1% 8%;
 }
-  .each-bttn-nav-top{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 20%;
-  }
-  .nav-subtitle{
-    color: white;
-    margin: 0% 8% 0% 8%;
-  }
-  .nav-icon{
-    width: 20%;
-  }
+.each-bttn-nav-top{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 20%;
+}
+.nav-subtitle{
+  color: white;
+  margin: 0% 8% 0% 8%;
+}
+.nav-icon{
+  width: 20%;
+}

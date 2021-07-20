@@ -6,7 +6,6 @@ const GoForwardArrow = () => {
   const stepForward = () =>{
     console.log ("avanzando el paso")
   }
-
   return (
     <div>
       <div>
@@ -17,4 +16,4 @@ const GoForwardArrow = () => {
   )
 }
 
-export default GoForwardArrow
+export default GoForwardArrow;
