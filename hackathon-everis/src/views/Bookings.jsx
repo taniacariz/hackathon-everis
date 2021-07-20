@@ -1,38 +1,43 @@
-import React from "react";
-import NavTop from "../components-home/NavTop";
-import GoForwardArrow from "../components-home/GoFowardArrow";
-import ReturnArrow from "../components-home/Return-arrow";
-import Date from "../components-bookins/Date"
-import Hour from "../components-bookins/Hour"
-import Quantity from "../components-bookins/Quantity"
-import WorkSpace from "../components-bookins/WorkSpace"
-import Confirm from "../components-bookins/Confirm"
+import React, { useContext, useReducer } from "react";
+import GoForwardArrow from "../components/home/Go-foward-arrow";
+import NavTop from "../components/home/NavTop";
+import Date from "../components/booking/date";
+import Hour from "../components/booking/hour";
+import Quantity from "../components/booking/quantity";
+import Workspace from "../components/booking/work-space";
+import Confirm from "../components/booking/confirm";
+import { FormContext } from "../context/form-context";
+import ReturnArrow from "../components/home/Return-arrow";
 
+const renderCurrentPage = (step, formData, dispatch) => {
+  switch (step) {
+    case 1:
+      return <Date dispatch={(value) => dispatch({ date: value })} />;
+    case 2:
+      return <Hour dispatch={(value) => dispatch({ timeblock: value })} />;
+    case 3:
+      return <Quantity dispatch={(value) => dispatch({ quantity: value })} />;
+    case 4:
+      return <Workspace dispatch={(value) => dispatch({ area: value })} />;
+    case 5:
+      return <Confirm data={formData} />;
+    default:
+      return null;
+  }
+};
 
-const Bookings = (props) => {
- 
-  const stepNumber = props.action;  
-  console.log (stepNumber)
-  const changeViewForm = () => {
-    if (stepNumber === 1) {
-      return <Date />
-    } else if (stepNumber === 2){
-      return <Hour />
-    }else if (stepNumber === 3){
-      return <Quantity />
-    }else if (stepNumber === 4){
-      return <WorkSpace />
-    }else if (stepNumber === 5){
-      return <Confirm />
-    }
-  };
+const formReducer = (state, action) => ({ ...state, ...action });
+
+export default function Bookings() {
+  const { step, next, prev } = useContext(FormContext);
+  const [formData, dispatchForm] = useReducer(formReducer, {});
 
   return (
     <div className="booking-container">
       <NavTop />
-      {changeViewForm()}
+      {renderCurrentPage(step, formData, dispatchForm)}
+      <ReturnArrow action={prev} />
+      <GoForwardArrow action={next} />
     </div>
   );
-};
-
-export default Bookings;
+}

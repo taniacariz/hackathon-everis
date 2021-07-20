@@ -1,0 +1,11 @@
+{
+  "date": "2021-07-20",
+  "timeblock": 1,
+  "area": {
+    "id": "1",
+    "area": "G_1",
+    "space": 12,
+    "type": "Informatica"
+  },
+  "quantity": 2
+}
