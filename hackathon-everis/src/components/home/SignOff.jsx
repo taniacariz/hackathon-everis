@@ -1,4 +1,4 @@
-import logout from "../images/log-out.png"
+import logout from "../../images/log-out.png"
 const SignOff = () => {
   const logOut = () => {
     console.log("diste click en salir");

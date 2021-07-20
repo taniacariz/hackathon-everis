@@ -1,6 +1,6 @@
 import React from 'react'
 import "./login.css"
-import logo_everis from '../images/logo_everis.png' 
+import logo_everis from '../../images/logo_everis.png' 
 
 
 export const HeaderLogin = () => {

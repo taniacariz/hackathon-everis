@@ -1,9 +1,9 @@
 import "./home.css";
-import date from "../images/date.png";
-import hour from "../images/hour.png";
-import quantity from "../images/quantity.png";
-import workSpace from "../images/work-space.png";
-import confirm from "../images/confirm.png";
+import date from "../../images/date.png";
+import hour from "../../images/hour.png";
+import quantity from "../../images/quantity.png";
+import workSpace from "../../images/work-space.png";
+import confirm from "../../images/confirm.png";
 
 const NavTop = () => {
   const changeView = (e) => {

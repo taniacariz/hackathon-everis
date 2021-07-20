@@ -4,9 +4,9 @@ import { Register } from "./views/Register";
 import { Home } from "./views/Home";
 
 function App() {
+
   return (
-    <Router>
-      <div className="container">
+      <Router>
         <Switch>
           <Route path="/" exact>
             <Login />
@@ -18,8 +18,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
-    </Router>
+      </Router>
   );
 }
 
