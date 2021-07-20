@@ -1,6 +1,5 @@
 import React from 'react'
 import NavTop from '../components-home/NavTop'
-import GoForwardArrow from '../components-home/Go-foward-arrow'
 
 const Bookings = () => {
 
@@ -15,12 +14,17 @@ const Bookings = () => {
 //             )
 //         }
 //     }
+        <div>
+            <NavTop />
+            <h1>estamos en bookings</h1>
+
 
     return ( 
         <div className="booking-container">
             <NavTop />
             
             <GoForwardArrow />
+
         </div>
     )
 }
