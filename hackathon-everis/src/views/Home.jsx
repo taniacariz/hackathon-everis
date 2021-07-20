@@ -6,21 +6,23 @@ import MainMenu from "../components-home/MainMenu";
 import Bookings from "./Bookings"
 import AllBookings from "./AllBookings"
 import MyBookings from "./MyBookings";
+import stepContext from "../context/stepContext";
 
 export const Home = () => { 
+  const { step} = React.useContext(stepContext);
   return (
     <Router>
       <div className="view-home-container">
         <MainMenu />
         <Switch>
           <Route path="/home/bookings">
-            {Bookings}
+            <Bookings action = {step} />
           </Route>
           <Route path="/home/allBookings">
-            {AllBookings}
+            <AllBookings />
           </Route>
           <Route path="/home/myBookings">
-            {MyBookings}
+            <MyBookings />
           </Route>
         </Switch>
       </div>
