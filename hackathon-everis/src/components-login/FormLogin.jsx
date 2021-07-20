@@ -1,7 +1,7 @@
 import React from "react";
 import { auth } from "../Firebase";
 
-export const Login = () => {
+export const FormLogin = () => {
   const [email, setEmail] = React.useState("");
   const [pass, setPass] = React.useState("");
   const [error, setError] = React.useState(null);

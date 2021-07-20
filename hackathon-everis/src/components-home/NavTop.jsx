@@ -9,7 +9,7 @@ const NavTop = () => {
   const changeView = (e) => {
     console.log("diste click en " + e.currentTarget.id);
   };
-
+ 
   return (
     <nav className="container-nav-top">
       <div className="each-bttn-nav-top" id="date" onClick={changeView}>
@@ -25,8 +25,8 @@ const NavTop = () => {
         <span className="nav-subtitle">Cantidad</span>
       </div>
       <div className="each-bttn-nav-top" id="work-space" onClick={changeView}>
-        <img src={workSpace} alt="Espacio de trabajo" className="nav-icon" />
-        <span className="nav-subtitle">Espacio de trabajo</span>
+        <img src={workSpace} alt="Zona laboral" className="nav-icon" />
+        <span className="nav-subtitle">Zona Laboral</span>
       </div>
       <div className="each-bttn-nav-top" id="confirmation" onClick={changeView}>
         <img src={confirm} alt="confirmar" className="nav-icon" />

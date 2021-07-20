@@ -1,5 +1,5 @@
 import React from "react";
-import { BodyLogin } from "../components-login/BodyLogin";
+import { ContentLogin } from "../components-login/ContentLogin";
 import { FooterLogin } from "../components-login/FooterLogin";
 import { HeaderLogin } from "../components-login/HeaderLogin";
 
@@ -7,7 +7,7 @@ export const Login = () => {
   return (
     <div className="container-login">
       <HeaderLogin />
-      <BodyLogin />
+      <ContentLogin />
       <FooterLogin />
     </div>
   );

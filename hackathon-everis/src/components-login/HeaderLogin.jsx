@@ -5,20 +5,13 @@ import Hour from "./Hour";
 
 export const HeaderLogin = () => {
   return (
-    <div>
-      <div className="container-header">
-        <div className="container-btn">
-          <Hour />
-        </div>
-        <div className="container-btn">
-          <div className="header-text">Space Management Model</div>
-          <img
-            src={logo_everis}
-            alt="Everis Logo"
-            width="190px"
-            height="94px"
-          />
-        </div>
+    <div className="container-header">
+      <div className="container-left">
+        <Hour />
+      </div>
+      <div className="container-right">
+        <div className="header-text">Space Management Model</div>
+        <img src={logo_everis} alt="Everis Logo" width="190px" height="94px" />
       </div>
     </div>
   );
