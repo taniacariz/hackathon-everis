@@ -29,21 +29,14 @@
       text-decoration: none;
     
      }
+
+  .booking-container{
+    width: 76%;
+    background-color: #6785C1;
+    color: white;
+  }
      
-
-
-
-
-
-
-
-
-
-
-
-
 .container-nav-top{
-  background-color: black;
   display: flex;
   flex-flow: row nowrap;
   margin: 4% 8% 1% 8%;
@@ -54,6 +47,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    width: 20%;
   }
   .nav-subtitle{
     color: white;
