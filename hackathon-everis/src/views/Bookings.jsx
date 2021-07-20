@@ -1,10 +1,26 @@
-
 import React from 'react'
+import NavTop from '../components-home/NavTop'
+import GoForwardArrow from '../components-home/Go-foward-arrow'
 
 const Bookings = () => {
+
+//const [step, setStep] = React.useState(1)
+// const probando = step
+
+//     const changeViewForm = ()=>{
+//         if (probando === 1 ) {
+            
+//             return (
+//                 <h1>hola</h1>
+//             )
+//         }
+//     }
+
     return (
-        <div>
-            estamos en bookings
+        <div className="booking-container">
+            <NavTop />
+            
+            <GoForwardArrow />
         </div>
     )
 }
