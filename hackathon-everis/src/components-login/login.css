@@ -1,0 +1,89 @@
+  .container-login{
+    height: 700px;
+    width: 1150px;
+    background-color: #ffffff;
+  }
+  
+  .container-header{
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    margin-left: 70px;
+    margin-right: 45px;
+  }
+  
+  .container-btn{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+  }
+  
+  .header-btn{
+    border-style: none;
+    background-color: white;
+  }
+  
+  .header-btn:hover {
+    opacity: 0.6;
+  }
+  
+  .header-text{
+    font-size: 22px;
+    color: #1b1b1b;
+  }
+  
+  .container-body{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 510px;
+    width: 100%;
+  }
+  
+  .container-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 65%;
+  }
+  
+  .form-placeholder{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 7px;
+  }
+  
+  .submit-btn{
+  width: 130px;
+  height: 40px;
+  color: #ffffff;
+  background: #6785C1;
+  border-radius: 10px;
+  border:none;
+  }
+  
+  .container-img{ 
+    height: 100%;
+    width: 35%;
+    background-color: #93a6cc;
+    /*background-image: url(images/ImagenTeclado.jpg);*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  footer{
+    height: 60px;
+    width: 100hv;
+    background-color: #6785C1;
+    font-size: 18px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
