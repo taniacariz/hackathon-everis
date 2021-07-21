@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import "./booking.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "./date.css";
-import { FormContext } from "../../context/FormContext";
-import GoForwardArrow from "../home/GoFowardArrow";
+import { FormContext } from "../../context/form-context";
+import GoForwardArrow from "../home/Go-foward-arrow";
 
 const DateBooking = ({ dispatch }) => {
   const { next } = React.useContext(FormContext);
   const [startDate, setStartDate] = useState(new Date());
+  const date = new Date(startDate)
+  const finaldate = date.getDate() + "/" +  (date.getMonth() + 1)  + "/" +  date.getFullYear()
+
 
   return (
     <div className="dateViewContainer">
@@ -17,8 +20,10 @@ const DateBooking = ({ dispatch }) => {
       <DatePicker
         selected={startDate}
         onChange={(date) => setStartDate(date)}
+        dateformat='dd/MM/yyyy'
+        minDate={new Date()}
       />
-      <button onClick={() => dispatch(Date())}>Confirmar</button>
+      <button onClick={() => dispatch(finaldate)}>Confirmar</button>
 
 
         <GoForwardArrow action={next} />{" "}
