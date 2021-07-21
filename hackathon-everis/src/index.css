@@ -10,9 +10,13 @@
 body {
   box-sizing: border-box;
   font-family: avenir-roman;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   background-color: #E5E5E5;
 }
 
+#root{
+  width: 100vw;
+  height: 100vh;
+}
