@@ -1,11 +1,12 @@
 .container-login {
   background-color: #ffffff;
+  height:100vh;
 }
 
 /*Header*/
 
 .container-header {
-  height: 130px;
+  height: 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -57,7 +58,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 510px;
+  height: 75%;
   width: 100%;
 }
 
@@ -139,7 +140,7 @@
 }
 
 footer {
-  height: 60px;
+  height: 10%;
   background-color: #6785c1;
   font-size: 12px;
   color: #ffffff;

@@ -1,5 +1,8 @@
-const CollaboratorName = () => {
-  return <p>Hola Karina</p>;
-};
+import React from 'react'
 
-export default CollaboratorName;
+const CollaboratorName = () => {
+  return (
+    <div className="collaborator-name">¡Hola Karina Silva!</div>
+  )
+}
+export default CollaboratorName
