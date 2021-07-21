@@ -16,7 +16,7 @@ const WorkSpace = ({ dispatch }) => {
 
   return (
     <div className="container">
-      <div className="container-workspace">
+      <div className="date-container">
         <div className="title-workspace">Selecciona la zona de trabajo</div>
         <img
           className="container-plano"
