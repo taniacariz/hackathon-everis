@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import "./date.css";
 import { FormContext } from "../../context/form-context";
 import GoForwardArrow from "../home/Go-foward-arrow";
 
-const Date = ({ dispatch }) => {
+const DateBooking = ({ dispatch }) => {
   const { next } = React.useContext(FormContext);
+  const [startDate, setStartDate] = useState(new Date());
+
   return (
     <div className="dateViewContainer">
-      <button onClick={() => dispatch("2021-07-20")}>Agrego Fecha</button>
-      estas en fecha
-      <GoForwardArrow action={next} />  
+      <h1>Bienvenido/a a Everis SMM</h1>
+      <p>Ingresa los siguientes datos para realizar tu reserva:</p>
+
+      <DatePicker
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+      />
+      <button onClick={() => dispatch(Date())}>Confirmar</button>
+
+
+        <GoForwardArrow action={next} />{" "}
+
     </div>
   );
 };
 
-export default Date;
+export default DateBooking;
