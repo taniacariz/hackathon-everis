@@ -1,45 +1,39 @@
 .view-home-container{
   display: flex;
-  flex-flow: row nowrap;
 }
 .navbar-container{
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 25%;
-  height:100vh; 
+  height: 100vh;
   background-color: #ffffff;
-  padding: 30px;
 }
 
 .btn-group{
   display: flex;
   flex-flow: column nowrap ;
   width: 60%;
-  margin-top: 20%;
 }
 .navbar-bttn{
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid black; 
+  border: 3px solid black;
   border-image: linear-gradient(100deg, #BCE687 , #6785C1) 1;
   margin: 10%;
   height: 40px;
-  width: 150px;
   text-decoration: none;
-  border-radius: 30px;
   color: rgb(37, 37, 37);
 }
 
 .collaborator-name{
   font-size: 22px;
   color: rgb(37, 37, 37);
-  margin-top: 20%
 }
 
 .cont-logout {
-  margin-top: 50%;
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -66,7 +60,7 @@
 .container-nav-top{
   display: flex;
   flex-flow: row nowrap;
-  margin: 4% 8% 1% 8%;
+  height: 12vh;
 }
 
 .each-bttn-nav-top{
@@ -89,8 +83,10 @@
 
 .order-arrow{
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
-  width: 550px;  
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .container-arrow{
@@ -100,9 +96,21 @@
   align-items: center;
 }
 
+.arrow-next{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
 .container-arrow-back{
   display: flex;
   width: 100px;
   justify-content: space-between;
   align-items: center;
+}
+
+.arrow-back{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
 }

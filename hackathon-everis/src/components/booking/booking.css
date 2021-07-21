@@ -1,0 +1,44 @@
+.date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+
+.title-workspace {
+  margin-top: 5%;
+  font-size: 24px;
+}
+
+.btn-confirm {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  width: 120px;
+  height: 35px;
+  font-size: 14px;
+}
+
+.btn-confirm:hover {
+  opacity: 0.6;
+}
+
+.input-order{
+  display: flex;
+  justify-content: center; 
+}
+
+.title-hour{
+  margin-top: 5%;
+
+  font-size: 24px;
+  text-align: center;
+}
+
+.container-plano{  
+  margin-top: 3%;
+  width: 670px;
+  border-radius: 18px;
+}
