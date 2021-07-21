@@ -5,7 +5,7 @@ import GoForwardArrow from "../home/Go-foward-arrow";
 import ReturnArrow from "../home/Return-arrow";
 import json from "../../Area.json";
 
-const WorkSpace = ({ dispatch }) => { 
+const WorkSpace = ({ dispatch }) => {
   const { prev, next } = React.useContext(FormContext);
   const [selectedArea, setSelectedArea] = useState("");
 
