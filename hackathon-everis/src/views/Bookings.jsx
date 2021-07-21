@@ -1,6 +1,7 @@
 import React from 'react'
 import NavTop from '../components-home/NavTop'
 import GoForwardArrow from '../components-home/Go-foward-arrow'
+import Date from '../components-bookins/Date'
 
 const Bookings = () => {
 
@@ -19,7 +20,7 @@ const Bookings = () => {
     return ( 
         <div className="booking-container">
             <NavTop />
-            
+            <Date />
             <GoForwardArrow />
         </div>
     )
