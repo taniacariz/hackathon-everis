@@ -6,13 +6,12 @@ import Workspace from "../components/booking/work-space";
 import Confirm from "../components/booking/confirm";
 import { FormContext } from "../context/form-context";
 
-
 const renderCurrentPage = (step, formData, dispatch) => {
   switch (step) {
     case 1:
       return <Date dispatch={(value) => dispatch({ date: value })} />;
     case 2:
-      return <Hour dispatch={(value) => dispatch({ timeblock: value, quantity: value })} />;
+      return <Hour dispatch={(value) => dispatch({ timeblock: value })} dispatch2={(value) => dispatch({ quantity: value })} />;
     case 3:
       return <Workspace dispatch={(value) => dispatch({ area: value })} />;
     case 4:

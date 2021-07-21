@@ -1,17 +1,18 @@
 .container-login {
   background-color: #ffffff;
+  height:100vh;
 }
 
 /*Header*/
 
 .container-header {
-  height: 130px;
+  height: 15%;
   display: flex;
   justify-content: space-between;
 }
 
 .container-right {
-  width: 65%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -19,7 +20,7 @@
 }
 
 .container-left {
-  width: 35%;
+  width: 30%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -57,7 +58,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 510px;
+  height: 75%;
   width: 100%;
 }
 
@@ -67,7 +68,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 65%;
+  width: 70%;
 }
 
 .container-form {
@@ -125,7 +126,7 @@
 
 .container-img {
   height: 100%;
-  width: 35%;
+  width: 30%;
   background-color: #93a6cc;
   /*background-image: url(images/ImagenTeclado.jpg);*/
   background-repeat: no-repeat;
@@ -139,7 +140,7 @@
 }
 
 footer {
-  height: 60px;
+  height: 10%;
   background-color: #6785c1;
   font-size: 12px;
   color: #ffffff;
