@@ -13,10 +13,9 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: #e5e5e5;
 }
 
 #root{
-  height: 700px;
-  width: 1150px;
+  height: 100%;
+  width: 100%;
 }
