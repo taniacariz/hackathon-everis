@@ -1,18 +1,12 @@
 import React from "react";
-import goFowardArrow from "../images/go-forward.png";
-import stepContext from "../context/stepContext";
+import goFowardArrow from "../../images/go-forward.png";
 
-const GoForwardArrow = () => {
-  const { step, updateStep } = React.useContext(stepContext);
-  const forwardStep = () => {
-    updateStep(step + 1);
-  };
-
+const GoForwardArrow = ({ action }) => {
   return (
     <div>
       <div>
         <span>Siguiente</span>
-        <img src={goFowardArrow} alt="Ir adelante" onClick={forwardStep} />
+        <img src={goFowardArrow} alt="Ir adelante" onClick={action} />
       </div>
     </div>
   );

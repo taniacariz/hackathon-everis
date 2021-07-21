@@ -9,7 +9,7 @@ import useForm from "../hooks/useForm";
 import { FormContext } from "../context/form-context";
 
 export const Home = () => {
-  const { step, prev, next } = useForm();
+  const { step, prev, next, changeStep } = useForm();
 
   return (
     <Router>
@@ -17,7 +17,7 @@ export const Home = () => {
         <MainMenu />
         <Switch>
           <Route path="/home/bookings">
-            <FormContext.Provider value={{ step, prev, next }}>
+            <FormContext.Provider value={{ step, prev, next, changeStep }}>
               <Bookings />
             </FormContext.Provider>
           </Route>

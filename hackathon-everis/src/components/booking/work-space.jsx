@@ -1,8 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
+import { FormContext } from "../../context/form-context";
+import GoForwardArrow from "../home/Go-foward-arrow";
+import ReturnArrow from "../home/Return-arrow";
 import json from "../../Area.json";
 
-const WorkSpace = ({ dispatch }) => {
+const WorkSpace = ({ dispatch }) => { 
+  const { prev, next } = React.useContext(FormContext);
   const [selectedArea, setSelectedArea] = useState("");
 
   useEffect(() => {
@@ -18,6 +22,8 @@ const WorkSpace = ({ dispatch }) => {
         ))}
       </select>
       Estas en zona laboral
+      <ReturnArrow action={prev} />
+      <GoForwardArrow action={next} />
     </div>
   );
 };

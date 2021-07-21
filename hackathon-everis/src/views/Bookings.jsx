@@ -29,15 +29,13 @@ const renderCurrentPage = (step, formData, dispatch) => {
 const formReducer = (state, action) => ({ ...state, ...action });
 
 export default function Bookings() {
-  const { step, next, prev } = useContext(FormContext);
+  const { step } = useContext(FormContext);
   const [formData, dispatchForm] = useReducer(formReducer, {});
 
   return (
     <div className="booking-container">
       <NavTop />
       {renderCurrentPage(step, formData, dispatchForm)}
-      <ReturnArrow action={prev} />
-      <GoForwardArrow action={next} />
     </div>
   );
 }
