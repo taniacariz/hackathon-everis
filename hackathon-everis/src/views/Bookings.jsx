@@ -2,7 +2,7 @@ import React, { useContext, useReducer } from "react";
 import NavTop from "../components/home/NavTop";
 import Date from "../components/booking/Date";
 import Hour from "../components/booking/Hour";
-import Workspace from "../components/booking/WorkSpace";
+import Workspace from "../components/booking/work-space";
 import Confirm from "../components/booking/Confirm";
 import { FormContext } from "../context/FormContext";
 
