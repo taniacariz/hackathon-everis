@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import "./date.css";
+
 import { FormContext } from "../../context/form-context";
 import GoForwardArrow from "../home/Go-foward-arrow";
 import ReturnArrow from "../home/Return-arrow";
@@ -16,7 +16,7 @@ const WorkSpace = ({ dispatch }) => {
 
   return (
     <div className="container">
-      <div className="container-workspace">
+      <div className="date-container">
         <div className="title-workspace">Selecciona la zona de trabajo</div>
         <img
           className="container-plano"

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import "./booking.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "./date.css";
 import { FormContext } from "../../context/form-context";
 import GoForwardArrow from "../home/Go-foward-arrow";
 
