@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "./views/Login";
 import { Home } from "./views/Home";
-//import stepContext from "./context/stepContext";
 
 function App() {
   return (

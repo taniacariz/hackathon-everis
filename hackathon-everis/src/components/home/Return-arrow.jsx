@@ -3,10 +3,10 @@ import ArrowImage from "../../images/return.png";
 
 const ReturnArrow = ({ action }) => {
   return (
-    <div style={{ cursor: "pointer" }}>
+    <div>
       <div>
-        <span>Siguiente</span>
         <img src={ArrowImage} alt="Ir atras" onClick={action} />
+        <span>Atrás</span>
       </div>
     </div>
   );
