@@ -1,6 +1,8 @@
 import React from "react";
 import { db } from "../../Firebase.js";
 import ReturnArrow from "../home/Return-arrow";
+import "./booking.css";
+
 
 const Confirm = ({ data }) => {
   const data1 = data;
