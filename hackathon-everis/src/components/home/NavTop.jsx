@@ -25,15 +25,15 @@ const NavTop = () => {
         <img src={hour} alt="Hora" className="nav-icon" />
         <span className="nav-subtitle">Horario</span>
       </div>
-      <div className="each-bttn-nav-top" id="3" onClick={changeView}>
+      <div className="each-bttn-nav-top" id="2" onClick={changeView}>
         <img src={quantity} alt="Cantidad de personas" className="nav-icon" />
         <span className="nav-subtitle">Cantidad</span>
       </div>
-      <div className="each-bttn-nav-top" id="4" onClick={changeView}>
+      <div className="each-bttn-nav-top" id="3" onClick={changeView}>
         <img src={workSpace} alt="Zona laboral" className="nav-icon" />
         <span className="nav-subtitle">Zona Laboral</span>
       </div>
-      <div className="each-bttn-nav-top" id="5" onClick={changeView}>
+      <div className="each-bttn-nav-top" id="4" onClick={changeView}>
         <img src={confirm} alt="confirmar" className="nav-icon" />
         <span className="nav-subtitle">Confirmación</span>
       </div>

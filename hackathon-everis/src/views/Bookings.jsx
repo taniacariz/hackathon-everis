@@ -12,7 +12,7 @@ const renderCurrentPage = (step, formData, dispatch) => {
     case 1:
       return <Date dispatch={(value) => dispatch({ date: value })} />;
     case 2:
-      return <Hour dispatch={(value) => dispatch({ timeblock: value, quantity: value })} />;
+      return <Hour dispatch={(value) => dispatch({ timeblock: value })} dispatch2={(value) => dispatch({ quantity: value })} />;
     case 3:
       return <Workspace dispatch={(value) => dispatch({ area: value })} />;
     case 4:
