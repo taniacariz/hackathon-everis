@@ -5,11 +5,11 @@ import MainMenu from "../components/home/MainMenu";
 import Bookings from "./Bookings";
 import AllBookings from "./AllBookings";
 import MyBookings from "./MyBookings";
-import useForm from "../hooks/useForm";
-import { FormContext } from "../context/form-context";
+import UseForm from "../hooks/UseForm";
+import { FormContext } from "../context/FormContext";
 
 export const Home = () => {
-  const { step, prev, next, changeStep } = useForm();
+  const { step, prev, next, changeStep } = UseForm();
 
   return (
     <Router>

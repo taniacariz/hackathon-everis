@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./date.css";
-import { FormContext } from "../../context/form-context";
-import GoForwardArrow from "../home/Go-foward-arrow";
+import { FormContext } from "../../context/FormContext";
+import GoForwardArrow from "../home/GoFowardArrow";
 
 const DateBooking = ({ dispatch }) => {
   const { next } = React.useContext(FormContext);

@@ -1,7 +1,7 @@
 import React from "react";
-import { FormContext } from "../../context/form-context";
-import GoForwardArrow from "../home/Go-foward-arrow";
-import ReturnArrow from "../home/Return-arrow";
+import { FormContext } from "../../context/FormContext";
+import GoForwardArrow from "../home/GoFowardArrow";
+import ReturnArrow from "../home/ReturnArrow";
 
 const Hour = ({ dispatch, dispatch2 }) => {
   const { prev, next } = React.useContext(FormContext);
