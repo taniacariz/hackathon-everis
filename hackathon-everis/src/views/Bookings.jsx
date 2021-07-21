@@ -6,7 +6,6 @@ import Workspace from "../components/booking/work-space";
 import Confirm from "../components/booking/confirm";
 import { FormContext } from "../context/form-context";
 
-
 const renderCurrentPage = (step, formData, dispatch) => {
   switch (step) {
     case 1:

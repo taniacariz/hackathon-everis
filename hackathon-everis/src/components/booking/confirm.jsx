@@ -1,7 +1,6 @@
 import React from "react";
 import ReturnArrow from "../home/Return-arrow";
 
-
 const Confirm = ({ data }) => {
   return (
     <div>

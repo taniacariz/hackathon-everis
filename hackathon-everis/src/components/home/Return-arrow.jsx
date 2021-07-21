@@ -3,11 +3,9 @@ import ArrowImage from "../../images/return.png";
 
 const ReturnArrow = ({ action }) => {
   return (
-    <div>
-      <div>
-        <img src={ArrowImage} alt="Ir atras" onClick={action} />
-        <span>Atrás</span>
-      </div>
+    <div className="container-arrow-back">
+      <img src={ArrowImage} alt="Volver" onClick={action} />
+      <span>Atrás</span>
     </div>
   );
 };
