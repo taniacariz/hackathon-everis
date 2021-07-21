@@ -9,6 +9,8 @@ const Hour = ({ dispatch }) => {
     <div>
       <button onClick={() => dispatch("12:00")}>Agrego Hora</button>
       Estas en hora
+      <button onClick={() => dispatch(2)}>Agrego Cantidad</button>
+      Estas en Cantidad
       <ReturnArrow action={prev} />
       <GoForwardArrow action={next} />
     </div>

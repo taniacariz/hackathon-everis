@@ -1,13 +1,13 @@
 .cuerpo{
     background-color: #6785C1;
-    width: 100%;
+    width: 76%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .misReservas {
-    position: absolute;
+    
     width: 204px;
     height: 28px;
     left: 335px;
@@ -23,7 +23,7 @@
 
 .tabla {
     
-    position: absolute;
+    
     width: 750px;
     height: 140px;
     left: 346px;
