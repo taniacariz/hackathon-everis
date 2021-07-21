@@ -1,41 +1,38 @@
-.cuerpo{
-    background-color: #6785C1;
-    width: 76%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.cuerpo {
+  background-color: #6785c1;
+  width: 76%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .misReservas {
-    
-    width: 204px;
-    height: 28px;
-    left: 335px;
-    top: 222px;
-    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    
-    color: #FFFFFF;
+  width: 204px;
+  height: 28px;
+  left: 335px;
+  top: 222px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
 }
 
 .tabla {
-    
-    
-    width: 750px;
-    height: 140px;
-    left: 346px;
-    top: 260px;
-    align-content: center;
-    
-    background: #FFFFFF;
-    border: 1px solid #6785C1;
-    box-sizing: border-box;
-    border-radius: 19px;
+  width: 750px;
+  height: 140px;
+  left: 346px;
+  top: 260px;
+  align-content: center;
+
+  background: #ffffff;
+  border: 1px solid #6785c1;
+  box-sizing: border-box;
+  border-radius: 19px;
 }
 
 td {
-    align-items: center;
+  align-items: center;
 }

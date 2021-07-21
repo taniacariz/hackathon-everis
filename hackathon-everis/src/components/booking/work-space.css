@@ -1,0 +1,39 @@
+.container-workspace {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-plano{  
+    margin-top: 3%;
+    width: 670px;
+    border-radius: 18px;
+}
+
+.title-workspace{
+    margin-top: 5%;
+    font-size: 24px;
+}
+
+.order-arrow{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;  
+}
+
+.container-arrow{
+    display: flex;
+    width: 115px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-arrow-back{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
