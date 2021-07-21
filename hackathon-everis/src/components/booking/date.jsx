@@ -8,6 +8,9 @@ import GoForwardArrow from "../home/Go-foward-arrow";
 const DateBooking = ({ dispatch }) => {
   const { next } = React.useContext(FormContext);
   const [startDate, setStartDate] = useState(new Date());
+  const date = new Date(startDate)
+  const finaldate = date.getDate() + "/" +  (date.getMonth() + 1)  + "/" +  date.getFullYear()
+
 
   return (
     <div className="dateViewContainer">
@@ -20,7 +23,7 @@ const DateBooking = ({ dispatch }) => {
         dateformat='dd/MM/yyyy'
         minDate={new Date()}
       />
-      <button onClick={() => dispatch(startDate)}>Confirmar</button>
+      <button onClick={() => dispatch(finaldate)}>Confirmar</button>
 
 
         <GoForwardArrow action={next} />{" "}
