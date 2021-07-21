@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import "./booking.css";
+
 import { FormContext } from "../../context/form-context";
 import GoForwardArrow from "../home/Go-foward-arrow";
 import ReturnArrow from "../home/Return-arrow";

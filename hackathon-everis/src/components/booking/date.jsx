@@ -8,23 +8,26 @@ import GoForwardArrow from "../home/Go-foward-arrow";
 const DateBooking = ({ dispatch }) => {
   const { next } = React.useContext(FormContext);
   const [startDate, setStartDate] = useState(new Date());
+  const date = new Date(startDate)
+  const finaldate = date.getDate() + "/" +  (date.getMonth() + 1)  + "/" +  date.getFullYear()
+
 
   return (
-    <div className="container">
-      <div className="date-container">
-        <div className="title-workspace">Bienvenido/a a Everis SMM</div>
-        <p>Selecciona la fecha en la que quieres realizar tu reserva:</p>
-        <DatePicker
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
-        />
-        <button className="btn-confirm" onClick={() => dispatch(Date())}>
-          Confirmar
-        </button>
-      </div>
-      <div className="arrow-next">
-        <GoForwardArrow action={next} />
-      </div>
+    <div className="dateViewContainer">
+      <h1>Bienvenido/a a Everis SMM</h1>
+      <p>Ingresa los siguientes datos para realizar tu reserva:</p>
+
+      <DatePicker
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+        dateformat='dd/MM/yyyy'
+        minDate={new Date()}
+      />
+      <button onClick={() => dispatch(finaldate)}>Confirmar</button>
+
+
+        <GoForwardArrow action={next} />{" "}
+
     </div>
   );
 };
