@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState } from "react";
 import "./booking.css";
-import { FormContext } from "../../context/form-context";
-import GoForwardArrow from "../home/Go-foward-arrow";
+import { FormContext } from "../../context/FormContext";
+import GoForwardArrow from "../home/GoForwardArrow";
 import ReturnArrow from "../home/Return-arrow";
 import json from "../../Area.json";
 import { db } from "../../Firebase.js";

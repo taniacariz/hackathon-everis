@@ -2,9 +2,10 @@ import React, { useContext, useReducer } from "react";
 import NavTop from "../components/home/NavTop";
 import Date from "../components/booking/date";
 import Hour from "../components/booking/hour";
-import Workspace from "../components/booking/work-space";
+import Workspace from "../components/booking/WorkSpace";
+import { FormContext } from "../context/FormContext";
 import Confirm from "../components/booking/confirm";
-import { FormContext } from "../context/form-context";
+
 
 const renderCurrentPage = (step, formData, dispatch) => {
   switch (step) {

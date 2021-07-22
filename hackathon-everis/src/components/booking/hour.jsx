@@ -1,7 +1,7 @@
 import React from "react";
 import "./booking.css";
-import { FormContext } from "../../context/form-context";
-import GoForwardArrow from "../home/Go-foward-arrow";
+import { FormContext } from "../../context/FormContext";
+import GoForwardArrow from "../home/GoForwardArrow";
 import ReturnArrow from "../home/Return-arrow";
 
 const Hour = ({ dispatch, dispatch2 }) => {
