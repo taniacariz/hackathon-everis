@@ -54,6 +54,8 @@ const WorkSpace = ({ dispatch }) => {
       }
     };
     bringData();
+
+    
   }, []);
 
   return (
