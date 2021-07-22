@@ -1,16 +1,16 @@
 import React, { useContext, useReducer } from "react";
 import NavTop from "../components/home/NavTop";
-import Date from "../components/booking/Date";
-import Hour from "../components/booking/Hour";
+import DateBooking from "../components/booking/date"; 
+import Hour from "../components/booking/hour";
 import Workspace from "../components/booking/WorkSpace";
 import { FormContext } from "../context/FormContext";
-import Confirm from "../components/booking/Confirm";
+import Confirm from "../components/booking/confirm";
 
 
 const renderCurrentPage = (step, formData, dispatch) => {
   switch (step) {
     case 1:
-      return <Date dispatch={(value) => dispatch({ date: value })} />;
+      return <DateBooking dispatch={(value) => dispatch({ date: value })} />;
     case 2:
       return (
         <Hour
@@ -19,7 +19,7 @@ const renderCurrentPage = (step, formData, dispatch) => {
         />
       );
     case 3:
-      return <Workspace dispatch={(value) => dispatch({ area: value })} />;
+      return <Workspace dispatch={(value) => dispatch({ area: value })} data= {formData} />;
     case 4:
       return <Confirm data={formData} />;
     default:

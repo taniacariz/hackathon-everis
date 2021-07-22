@@ -86,3 +86,20 @@
   margin-top: 20px;
   width: 300px;
 }
+
+.dinamicDiv{
+  display: flex;
+  flex-flow: row nowrap ;
+  justify-content: center;
+  align-items: center;
+  width: 70%; 
+  margin: 3%;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.dinamicDivChild{
+  margin: 1%;
+}
+.subtitleDiv{
+  font-family: avenir-black;
+}
