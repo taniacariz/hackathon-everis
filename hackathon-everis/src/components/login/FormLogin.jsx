@@ -1,8 +1,9 @@
 import "./login.css";
 import React from "react";
 import { auth } from "../../Firebase.js";
+import { withRouter } from "react-router-dom";
 
-export const FormLogin = () => {
+const FormLogin = (props) => {
   const [email, setEmail] = React.useState("");
   const [pass, setPass] = React.useState("");
   const [error, setError] = React.useState(null);
@@ -11,8 +12,6 @@ export const FormLogin = () => {
 
   const procesarDatos = (e) => {
     e.preventDefault();
-
-    // Si no tiene nada
 
     if (!email.trim()) {
       console.log("Ingrese Email");
@@ -44,6 +43,10 @@ export const FormLogin = () => {
     try {
       const res = await auth.signInWithEmailAndPassword(email, pass);
       console.log(res.user);
+      setEmail("");
+      setPass("");
+      setError(null);
+      props.history.push("/home/bookings");
     } catch (error) {
       console.log(error);
       if (error.code === "auth/user-not-found") {
@@ -53,12 +56,16 @@ export const FormLogin = () => {
         setError("Contraseña Inválida");
       }
     }
-  }, [email, pass]);
+  }, [email, pass, props.history]);
 
   const register = React.useCallback(async () => {
     try {
       const res = await auth.createUserWithEmailAndPassword(email, pass);
       console.log(res.user);
+      setEmail("");
+      setPass("");
+      setError(null);
+      props.history.push("/home/bookings");
     } catch (error) {
       console.log(error);
       if (error.code === "auth/invalid-email") {
@@ -68,7 +75,7 @@ export const FormLogin = () => {
         setError("Email ya registrado");
       }
     }
-  }, [email, pass]);
+  }, [email, pass, props.history]);
 
   return (
     <div className="container-elements">
@@ -109,3 +116,5 @@ export const FormLogin = () => {
     </div>
   );
 };
+
+export default withRouter(FormLogin);
