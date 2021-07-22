@@ -13,7 +13,7 @@ const SignOff = (props) => {
   };
 
   return (
-    <div type="button" className="cont-logout" onClick={logOut}>
+    <div type="button" className="navbar-bttn " onClick={logOut}>
       <small className="logoutTitle">Cerrar sesion</small>
       <img src={logout} alt="icono cierre" className="icono-logout" />
     </div>
