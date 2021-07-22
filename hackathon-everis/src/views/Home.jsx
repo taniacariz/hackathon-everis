@@ -12,7 +12,7 @@ import { withRouter } from "react-router-dom";
 
 const Home = (props) => {
   const { step, prev, next, changeStep } = UseForm();
-  const [user, setUser] = React.useState(null);
+  const [setUser] = React.useState(null);
 
   React.useEffect(() => {
     if (auth.currentUser) {
