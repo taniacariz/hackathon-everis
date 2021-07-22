@@ -1,9 +1,17 @@
 import logout from "../../images/log-out.png";
+import { withRouter } from "react-router-dom";
+import { auth } from "../../Firebase";
 
-const SignOff = () => {
+const SignOff = (props) => {
+  
+
   const logOut = () => {
-    console.log("diste click en salir");
+    auth.signOut().then(() => {
+      console.log("Cerrando sesión");
+      window.location.replace('/')
+    });
   };
+
   return (
     <div type="button" className="cont-logout" onClick={logOut}>
       <small className="logoutTitle">Cerrar sesion</small>
@@ -12,4 +20,4 @@ const SignOff = () => {
   );
 };
 
-export default SignOff;
+export default withRouter(SignOff);

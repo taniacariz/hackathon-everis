@@ -1,10 +1,24 @@
 import React from "react";
+import Home from "./views/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Login } from "./views/Login";
-import { Home } from "./views/Home";
+import { auth } from "./Firebase";
 
-function App() {
-  return (
+const App = () => {
+  const [firebaseUser, setFirebaseUser] = React.useState(false);
+
+  React.useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      console.log(user);
+      if (user) {
+        setFirebaseUser(user);
+      } else {
+        setFirebaseUser(null);
+      }
+    });
+  }, []);
+
+  return firebaseUser !== false ? (
     <Router>
       <Switch>
         <Route path="/" exact>
@@ -15,7 +29,9 @@ function App() {
         </Route>
       </Switch>
     </Router>
+  ) : (
+    <p>Trayendo datos de Firebase...</p>
   );
-}
+};
 
 export default App;

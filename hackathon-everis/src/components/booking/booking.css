@@ -3,16 +3,17 @@
   flex-direction: column;
   align-items: center;
   height: 70vh;
+
 }
 
-.title-workspace {
-  margin-top: 5%;
-  font-size: 24px;
+.title-booking{
+  margin-top: 4%;
+  font-size: 20px;
+  text-align: center;
 }
 
 .btn-confirm {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10%;
   border-radius: 10px;
   border: none;
   background-color: #ffffff;
@@ -25,30 +26,63 @@
   opacity: 0.6;
 }
 
-.input-order{
+.btn-add {
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  width: 100px;
+  height: 35px;
+  font-size: 12px;
+}
+
+.btn-addhour:hover {
+  opacity: 0.6;
+}
+
+
+.btn-addhour {
+  margin-top: 2%;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  width: 120px;
+  height: 35px;
+  font-size: 12px;
+}
+
+.btn-addhour:hover {
+  opacity: 0.6;
+}
+
+.input-order {
+  margin-top: 2%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.title-hour{
-  margin-top: 5%;
-
-  font-size: 24px;
-  text-align: center;
-}
-
-.container-plano{  
-  margin-top: 3%;
-  width: 670px;
+.container-plano {
+  margin-top: 1%;
+  width: 40vw;
+  max-width: 50vw;
   border-radius: 18px;
 }
 
-.dateViewContainer {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.bnt-select{
+  margin-top: 10%;
+  height: 40px;
+  border-radius: 8px;
 }
 
+.bnt-selecttwo{
+  height: 35px;
+  width: 100px;
+  border-radius: 8px;
+}
+
+.container-add{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 300px;
+}

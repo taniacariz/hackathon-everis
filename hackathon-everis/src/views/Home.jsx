@@ -5,11 +5,32 @@ import MainMenu from "../components/home/MainMenu";
 import Bookings from "./Bookings";
 import AllBookings from "./AllBookings";
 import MyBookings from "./MyBookings";
+<<<<<<< HEAD
 import UseForm from "../hooks/UseForm";
 import { FormContext } from "../context/form-context";
 
 export const Home = () => {
   const { step, prev, next, changeStep } = UseForm();
+=======
+import useForm from "../hooks/UseForm";
+import { FormContext } from "../context/FormContext";
+import { auth } from "../Firebase";
+import { withRouter } from "react-router-dom";
+
+const Home = (props) => {
+  const { step, prev, next, changeStep } = useForm();
+  const [user, setUser] = React.useState(null);
+
+  React.useEffect(() => {
+    if (auth.currentUser) {
+      console.log("Usuario existente");
+      setUser(auth.currentUser);
+    } else {
+      console.log("Usuario no existe");
+      props.history.push("/");
+    }
+  }, [props.history]);
+>>>>>>> 3dcbe4a2dfc45150fd319062cfa388e52fcc2383
 
   return (
     <Router>
@@ -32,3 +53,5 @@ export const Home = () => {
     </Router>
   );
 };
+
+export default withRouter(Home);

@@ -105,11 +105,11 @@
 
 .btn-login {
   width: 15%;
-  height: 5.5%;
+  height: 6%;
   font-size: 14px;
   color: #ffffff;
   background: #6785c1;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
   margin-top: 25px;
 }
@@ -117,10 +117,10 @@
 .btn-logintwo {
   width: 15%;
   font-size: 12px;
-  height: 4.5%;
+  height: 5%;
   color: #ffffff;
   background: #6785c1;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
   margin-top: 5px;
 }
@@ -135,7 +135,7 @@
 
 .pass {
   font-size: 14px;
-  margin-left: 180px;
+  margin-left: 100px;
   color: #9aac22;
 }
 

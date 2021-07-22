@@ -1,6 +1,8 @@
 import React from "react";
 import { db } from "../../Firebase.js";
 import ReturnArrow from "../home/Return-arrow";
+import "./booking.css";
+
 
 const Confirm = ({ data }) => {
   const data1 = data;
@@ -13,7 +15,7 @@ const Confirm = ({ data }) => {
         timeblock: data1.timeblock,
       };
       console.log(newBooking);
-      const data = await db.collection("bookings").add(newBooking);
+      const dataBooking = await db.collection("bookings").add(newBooking);
       alert("Su reserva fue realizada con éxito");
     } catch (error) {
       console.log(error);
