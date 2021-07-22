@@ -4,6 +4,7 @@ import ReturnArrow from "../home/Return-arrow";
 import "./booking.css";
 
 const Confirm = ({ data }) => {
+  const {displayName} = JSON.parse(localStorage.getItem("user") || "{}")
   const data1 = data;
   const addBooking = async () => {
     console.log(data1);
@@ -13,6 +14,7 @@ const Confirm = ({ data }) => {
         date: data1.date,
         quantity: data1.quantity,
         timeblock: data1.timeblock,
+        userName: displayName
       };
       const dataBooking = await db.collection("bookings").add(newBooking);
       alert("Su reserva fue realizada con éxito");
