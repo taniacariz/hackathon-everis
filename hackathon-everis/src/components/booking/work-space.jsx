@@ -1,18 +1,60 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./booking.css";
 import { FormContext } from "../../context/form-context";
 import GoForwardArrow from "../home/Go-foward-arrow";
 import ReturnArrow from "../home/Return-arrow";
 import json from "../../Area.json";
+import { db } from "../../Firebase.js";
+
 
 const WorkSpace = ({ dispatch }) => {
   const { prev, next } = React.useContext(FormContext);
-  const [selectedArea, setSelectedArea] = useState("");
+  const [selectedArea, setSelectedArea] = useState("1");
+  const [dinamicDiv, setDinamicDiv] = useState(null)
+  const [bookings, setBookings] = React.useState([]);
 
-  useEffect(() => {
-    if (selectedArea) dispatch(json.Work.find(({ id }) => id === selectedArea));
-  }, [selectedArea]);
+  console.log(bookings);
+
+  const filterJson = json.Work.find(({ id }) => id === selectedArea)
+
+
+  const changeState = (e) =>(
+    setSelectedArea(e.currentTarget.value)
+  )
+
+  const showDiv = (e) => {
+
+    const filterJson2 = json.Work.find(({ id }) => id === e.currentTarget.value);
+    // const availability =  bookings.filter ((element) => element.area.id === filterJson.id );
+    // console.log (availability)
+    console.log (filterJson2)
+    
+    setDinamicDiv(
+    <div>
+      <span>Area {filterJson2.area}</span>
+      <span>Espacios totales en el area {filterJson2.space}</span>
+      <span>Espacios disponibles</span>
+
+    </div>
+    )
+  }
+
+  React.useEffect(() => {
+    const bringData = async () => {
+      try {
+        const data = await db.collection("bookings").get();
+        const arrayData = data.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setBookings(arrayData);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    bringData();
+  }, []);
 
   return (
     <div className="container">
@@ -24,8 +66,11 @@ const WorkSpace = ({ dispatch }) => {
           alt="Plano"
         />
         <div className="container-add">
-          <button class="btn-add" onClick={() => dispatch(json.Work[0])}>Agregar</button>
-          <select class="bnt-selecttwo" onChange={(e) => setSelectedArea(e.currentTarget.value)}>
+          <button className="btn-add" onClick={() => dispatch(filterJson)}>Agregar</button>
+          <select
+            className="bnt-selecttwo"
+            onChange={(e) => {changeState(e); showDiv(e); }}
+          >
             {json.Work.map(({ id, area }) => (
               <option key={id} value={id}>
                 {area}
@@ -33,6 +78,7 @@ const WorkSpace = ({ dispatch }) => {
             ))}
           </select>
         </div>
+        {dinamicDiv}
       </div>
       <div className="order-arrow">
         <ReturnArrow action={prev} />
