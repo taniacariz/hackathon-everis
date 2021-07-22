@@ -24,6 +24,11 @@ const WorkSpace = ({ dispatch, data }) => {
     }
   };
 
+  const joinFunctions = () => {
+    dispatch(filterJson)
+    next()
+  }
+
   return (
     <div className="container">
       <div className="date-container">
@@ -47,15 +52,12 @@ const WorkSpace = ({ dispatch, data }) => {
               </option>
             ))}
           </select>
-          <button className="btn-add" onClick={() => dispatch(filterJson)}>
-            Agregar
-          </button>
         </div>
         {showDiv()}
       </div>
       <div className="order-arrow">
         <ReturnArrow action={prev} />
-        <GoForwardArrow action={next} />
+        <GoForwardArrow action={joinFunctions} />
       </div>
     </div>
   );

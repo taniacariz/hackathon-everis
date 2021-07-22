@@ -9,9 +9,11 @@ const DateBooking = ({ dispatch }) => {
   const { next } = React.useContext(FormContext);
   const [startDate, setStartDate] = useState(new Date());
   const date = new Date(startDate);
-  const finaldate =
-    date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-
+  const finaldate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+  const joinFunctions = () =>{
+    dispatch(finaldate);
+    next();
+  }
   return (
     <div className="container">
       <div className="date-container">
@@ -23,12 +25,9 @@ const DateBooking = ({ dispatch }) => {
           dateformat="dd/MM/yyyy"
           minDate={new Date()}
         />
-        <button className="btn-confirm" onClick={() => dispatch(finaldate)}>
-          Confirmar
-        </button>
       </div>
       <div className="arrow-next">
-        <GoForwardArrow action={next} />
+        <GoForwardArrow action={joinFunctions} />
       </div>
     </div>
   );
