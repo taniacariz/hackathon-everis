@@ -19,7 +19,7 @@ const renderCurrentPage = (step, formData, dispatch) => {
         />
       );
     case 3:
-      return <Workspace dispatch={(value) => dispatch({ area: value })} />;
+      return <Workspace dispatch={(value) => dispatch({ area: value })} data= {formData} />;
     case 4:
       return <Confirm data={formData} />;
     default:
