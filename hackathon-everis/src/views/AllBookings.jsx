@@ -1,6 +1,6 @@
 import React from "react";
 import { db } from "../Firebase.js";
-import "../components/reserves/MyBookings.css";
+import "../components/reserves/mybookings.css";
 
 const AllBookings = () => {
   const [bookings, setBookings] = React.useState([]);
