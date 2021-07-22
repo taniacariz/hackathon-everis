@@ -6,7 +6,7 @@ import Bookings from "./Bookings";
 import AllBookings from "./AllBookings";
 import MyBookings from "./MyBookings";
 import UseForm from "../hooks/UseForm";
-import { FormContext } from "../context/FormContext";
+import { FormContext } from "../context/form-context";
 
 export const Home = () => {
   const { step, prev, next, changeStep } = UseForm();

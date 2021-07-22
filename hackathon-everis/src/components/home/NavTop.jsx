@@ -5,7 +5,7 @@ import hour from "../../images/hour.png";
 import quantity from "../../images/quantity.png";
 import workSpace from "../../images/work-space.png";
 import confirm from "../../images/confirm.png";
-import { FormContext } from "../../context/FormContext";
+import { FormContext } from "../../context/form-context";
 
 const NavTop = () => {
   const { changeStep } = useContext(FormContext);
