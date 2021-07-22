@@ -7,4 +7,4 @@ const CollaboratorName = () => {
     <div className="collaborator-name">¡Hola {displayName}!</div>
   )
 }
-export default CollaboratorName
+export default CollaboratorName;
