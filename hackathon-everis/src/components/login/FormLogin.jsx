@@ -6,6 +6,7 @@ import { withRouter } from "react-router-dom";
 const FormLogin = (props) => {
   const [email, setEmail] = React.useState("");
   const [pass, setPass] = React.useState("");
+  const [name, setName] = React.useState("");
   const [error, setError] = React.useState(null);
 
   const [esRegistro, setEsRegistro] = React.useState(false);
@@ -42,10 +43,10 @@ const FormLogin = (props) => {
   const login = React.useCallback(async () => {
     try {
       const res = await auth.signInWithEmailAndPassword(email, pass);
-      console.log(res.user);
       setEmail("");
       setPass("");
       setError(null);
+      localStorage.setItem("user", JSON.stringify(res.user))
       props.history.push("/home/bookings");
     } catch (error) {
       console.log(error);
@@ -61,10 +62,17 @@ const FormLogin = (props) => {
   const register = React.useCallback(async () => {
     try {
       const res = await auth.createUserWithEmailAndPassword(email, pass);
+      try {
+        auth.currentUser.updateProfile({displayName:name})
+      } catch (e){
+        console.error(e)
+      }
       console.log(res.user);
+      setName("")
       setEmail("");
       setPass("");
       setError(null);
+      localStorage.setItem("user", JSON.stringify({displayName: name}))
       props.history.push("/home/bookings");
     } catch (error) {
       console.log(error);
@@ -75,7 +83,7 @@ const FormLogin = (props) => {
         setError("Email ya registrado");
       }
     }
-  }, [email, pass, props.history]);
+  }, [email, pass,name, props.history]);
 
   return (
     <div className="container-elements">
@@ -84,7 +92,13 @@ const FormLogin = (props) => {
       </h3>
       <form onSubmit={procesarDatos} className="container-form">
         {error && <div class="alert">{error}</div>}
-
+        {esRegistro && <input
+          type="text"
+          className="form-control"
+          placeholder="Ingresa tu nombre"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+        />}
         <input
           type="email"
           className="form-control"

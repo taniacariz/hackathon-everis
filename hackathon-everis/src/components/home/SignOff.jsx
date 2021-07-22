@@ -1,21 +1,19 @@
-import logout from "../../images/log-out.png";
 import { withRouter } from "react-router-dom";
 import { auth } from "../../Firebase";
 
 const SignOff = (props) => {
-  
-
   const logOut = () => {
     auth.signOut().then(() => {
       console.log("Cerrando sesión");
-      window.location.replace('/')
+      window.location.replace("/");
     });
   };
 
   return (
-    <div type="button" className="navbar-bttn " onClick={logOut}>
-      <small className="logoutTitle">Cerrar sesion</small>
-      <img src={logout} alt="icono cierre" className="icono-logout" />
+    <div className="btn-group">
+      <button className="btn-navbar" onClick={logOut}>
+        Cerrar Sesión
+      </button>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./booking.css";
+import "../booking/booking.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FormContext } from "../../context/FormContext";
@@ -23,7 +23,9 @@ const DateBooking = ({ dispatch }) => {
           dateformat="dd/MM/yyyy"
           minDate={new Date()}
         />
-        <button className="btn-confirm" onClick={() => dispatch(finaldate)}>Confirmar</button>
+        <button className="btn-confirm" onClick={() => dispatch(finaldate)}>
+          Confirmar
+        </button>
       </div>
       <div className="arrow-next">
         <GoForwardArrow action={next} />
