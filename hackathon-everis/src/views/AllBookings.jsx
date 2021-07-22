@@ -8,7 +8,8 @@ const AllBookings = () => {
   React.useEffect(() => {
     const bringData = async () => {
       try {
-        const data = await db.collection("bookings").get();
+        const data = await db.collection("bookings").orderBy("date").get();
+        
         const arrayData = data.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
