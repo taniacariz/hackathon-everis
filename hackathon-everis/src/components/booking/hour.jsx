@@ -15,7 +15,11 @@ const Hour = ({ dispatch, dispatch2 }) => {
   const onChangeQuantity = (event) => {
     setQuantity(event.target.value);
   };
-
+  const joinFunctions = ()=>{
+    dispatch(blockHour);
+    dispatch2(quantity);
+    next();
+  }
   return (
     <div className="container">
       <div className="date-container">
@@ -24,7 +28,6 @@ const Hour = ({ dispatch, dispatch2 }) => {
         <input type="radio" id="block1" value="Bloque 1 (8:00 - 13:15 HRS)" name="hour" /> Bloque 1 (8:00 - 13:15 HRS)
         <input type="radio" id="block2" value="Bloque 2 (13:45 - 19:00 HRS)" name="hour" /> Bloque 2 (13:45 - 19:00 HRS)
         </div>
-        <button className="btn-addhour" onClick={() => dispatch(blockHour)}>Agregar hora</button>
         <div>
           <select className="bnt-select" onChange={onChangeQuantity}>
             <option value="0">Selecciona la cantidad de personas</option>
@@ -37,11 +40,10 @@ const Hour = ({ dispatch, dispatch2 }) => {
             <option value="7">7</option>
           </select>
         </div>
-        <button className="btn-addhour" onClick={() => dispatch2(quantity)}>Agregar cantidad</button>
       </div>
       <div className="order-arrow">
         <ReturnArrow action={prev} />
-        <GoForwardArrow action={next} />
+        <GoForwardArrow action={joinFunctions} />
       </div>
     </div>
   );

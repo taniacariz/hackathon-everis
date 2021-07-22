@@ -38,7 +38,7 @@ const AllBookings = () => {
             {bookings.map((item) => (
               <tr>
                 <td> {item.date}</td>
-                <td>{item.id}</td>
+                <td>{item.userName}</td>
                 <td>{item.timeblock}</td>
                 <td>{item.quantity}</td>
                 <td>{item.area.area}</td>
