@@ -1,6 +1,7 @@
 import React from "react";
 import { db } from "../Firebase.js";
 import "../components/reserves/mybookings.css";
+import Delete from "../images/delete.png"
 
 const MyBookings = () => {
   const [bookings, setBookings] = React.useState([]);
@@ -41,7 +42,7 @@ const MyBookings = () => {
                 <td>{item.timeblock}</td>
                 <td>{item.quantity}</td>
                 <td>{item.area.area}</td>
-                <td></td>
+                <td><img className="delete" src={Delete} alt="delete"></img></td>
               </tr>
             ))}
           </table>
