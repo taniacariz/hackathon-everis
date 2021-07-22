@@ -3,8 +3,11 @@ import { db } from "../Firebase.js";
 import "../components/reserves/mybookings.css";
 
 const MyBookings = () => {
+  const {displayName} = JSON.parse(localStorage.getItem("user") || "{}")
   const [bookings, setBookings] = React.useState([]);
-  console.log(bookings);
+  
+  const filterByName = bookings.filter((booking) => booking.userName === displayName)
+
 
   React.useEffect(() => {
     const bringData = async () => {
@@ -35,7 +38,7 @@ const MyBookings = () => {
               <th>Area</th>
               <th>Cancelar</th>
             </tr>
-            {bookings.map((item) => (
+            {filterByName.map((item) => (
               <tr>
                 <td> {item.date}</td>
                 <td>{item.timeblock}</td>
