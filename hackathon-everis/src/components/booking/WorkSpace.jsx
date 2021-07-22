@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./booking.css";
 import { FormContext } from "../../context/FormContext";
 import GoForwardArrow from "../home/GoForwardArrow";
@@ -45,7 +45,7 @@ const WorkSpace = ({ dispatch, data }) => {
               changeState(e);
             }}
           >
-            <option value="0"> areas</option>
+            <option value="0">Área de trabajo</option>
             {json.Work.map(({ id, area }) => (
               <option key={id} value={id}>
                 {area}

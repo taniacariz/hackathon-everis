@@ -27,12 +27,12 @@ const Confirm = ({ data }) => {
     <div className="container">
       <div className="date-container">
         <h1>Verifica los datos de tu visita a continuación:</h1>
-        <p>
-          Tu reserva de trabajo será programado para el día {data.date}
-          en el {data.timeblock} para {data.quantity} personas en el area{" "}
-          {data.area.area} .
-        </p>
-        <button onClick={addBooking}>Confirmación</button>
+        <div className="confirm-text">
+          Tu reserva de trabajo fue programada para el día {data.date + " "} 
+          durante el {data.timeblock + " "} para {data.quantity + " "} personas en el área de trabajo 
+          {" " + data.area.area} .
+        </div>
+        <button className="btn-confirm" onClick={addBooking}>Confirmación</button>
       </div>
       <div className="arrow-back">
         <ReturnArrow />
