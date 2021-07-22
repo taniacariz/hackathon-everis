@@ -5,13 +5,13 @@ import MainMenu from "../components/home/MainMenu";
 import Bookings from "./Bookings";
 import AllBookings from "./AllBookings";
 import MyBookings from "./MyBookings";
-import useForm from "../hooks/useForm";
+import UseForm from "../hooks/UseForm";
 import { FormContext } from "../context/FormContext";
 import { auth } from "../Firebase";
 import { withRouter } from "react-router-dom";
 
 const Home = (props) => {
-  const { step, prev, next, changeStep } = useForm();
+  const { step, prev, next, changeStep } = UseForm();
   const [user, setUser] = React.useState(null);
 
   React.useEffect(() => {
