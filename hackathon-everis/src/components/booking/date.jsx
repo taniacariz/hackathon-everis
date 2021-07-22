@@ -18,7 +18,7 @@ const DateBooking = ({ dispatch }) => {
       <DatePicker
         selected={startDate}
         onChange={(date) => setStartDate(date)}
-        dateformat='dd/MM/yyyy'
+        dateformat='dd/MM/yyyy' 
         minDate={new Date()}
       />
       <button onClick={() => dispatch(finaldate)}>Confirmar</button>
