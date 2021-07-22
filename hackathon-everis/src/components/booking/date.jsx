@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./booking.css";
+import "../booking/booking.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { FormContext } from "../../context/FormContext";

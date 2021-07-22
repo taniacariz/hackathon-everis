@@ -5,13 +5,6 @@ import MainMenu from "../components/home/MainMenu";
 import Bookings from "./Bookings";
 import AllBookings from "./AllBookings";
 import MyBookings from "./MyBookings";
-<<<<<<< HEAD
-import UseForm from "../hooks/UseForm";
-import { FormContext } from "../context/form-context";
-
-export const Home = () => {
-  const { step, prev, next, changeStep } = UseForm();
-=======
 import useForm from "../hooks/UseForm";
 import { FormContext } from "../context/FormContext";
 import { auth } from "../Firebase";
@@ -30,7 +23,6 @@ const Home = (props) => {
       props.history.push("/");
     }
   }, [props.history]);
->>>>>>> 3dcbe4a2dfc45150fd319062cfa388e52fcc2383
 
   return (
     <Router>
